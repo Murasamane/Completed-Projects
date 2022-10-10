@@ -1,0 +1,151 @@
+/*///////////////////////////////////////////////////*/
+/* HEAD SECTION */
+/*///////////////////////////////////////////////////*/
+.to-do-list-div {
+  width: 60rem;
+  margin: 10rem auto;
+  padding: 2.4rem;
+}
+
+.todo-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+}
+.todo-title {
+  font-size: 3.2rem;
+  color: hsl(0, 0%, 98%);
+  font-weight: 700;
+}
+.todo-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.svg-moon {
+  display: none;
+}
+
+/*///////////////////////////////////////////////////*/
+/* list body section */
+/*///////////////////////////////////////////////////*/
+
+.to-do__input {
+  font-size: 1.6rem;
+  color: hsl(236, 33%, 92%);
+  width: 100%;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(235, 24%, 19%);
+  margin-bottom: 3.2rem;
+}
+.main-inputs-outputs {
+  background-color: hsl(235, 24%, 19%);
+}
+
+.outputs {
+  list-style-type: none;
+}
+.output-list-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 4.8rem;
+  align-items: center;
+  font-size: 1.6rem;
+  color: hsl(236, 33%, 92%);
+  width: 100%;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(235, 24%, 19%);
+}
+
+.delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*///////////////////////////////////////////////////*/ /*///////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////*/ /*///////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////*/ /*///////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////*/ /*///////////////////////////////////////////////////*/
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -30%);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid hsl(235, 19%, 35%);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  border-color: linear-gradient(
+    90deg,
+    rgba(94, 212, 254, 1) 0%,
+    rgba(192, 88, 243, 1) 100%
+  );
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background: rgb(94, 212, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 212, 254, 1) 0%,
+    rgba(192, 88, 243, 1) 100%
+  );
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  top: 5px;
+  left: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
