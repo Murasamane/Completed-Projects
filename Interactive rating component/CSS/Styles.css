@@ -1,0 +1,104 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:  hsl(216, 12%, 8%);
+    Font-size:15px;
+}
+.rate-system{
+    background-color: hsl(213, 19%, 18%);
+    width: 370px;
+    margin: 10% auto;
+    border-radius: 25px;
+    padding: 10px;
+
+
+}
+.icons{
+    background-color:hsla(218, 7%, 32%, 0.51);;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.star-icon{
+    margin-left: 1px;
+}
+.text-summery{
+ padding: 15px;
+
+}
+.text-summery h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+}
+i{
+    color: hsl(25, 97%, 53%);
+}
+.text-summery p{
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    
+}
+.rates{
+    list-style-type: none;
+    display: flex;
+
+
+}
+.list-items{
+    border: 1px solid hsl(216, 12%, 8%);
+    background-color: hsla(212, 17%, 15%, 0.495);
+    color: hsl(217, 12%, 63%);
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: 'Overpass', sans-serif;
+    margin-right: 10px;
+}
+
+input{
+    margin-top: 10px;
+    width: 100%;
+    background-color:hsl(25, 97%, 53%);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.1cm;
+}
+input:hover{
+    color: Orange;
+    background-color: white;
+}
+.active{
+    background-color:orange;
+    color: white;
+}
+.img-div{
+    text-align: center;
+}
+.selected-rating{
+    background-color:  hsla(212, 17%, 15%, 0.495);
+    color:hsl(25, 97%, 53%);
+    font-size: 15px;
+    text-align: center;
+    margin:15px auto;
+    border-radius: 15px;
+    padding: .01px 5px .01px 5px;
+    max-width: 50%;
+    font-family: 'Overpass', sans-serif;
+}
+.thank-you-summary h1{
+    text-align: center;
+color: white;
+font-family: 'Overpass', sans-serif;
+}
+.thank-you-summary p{
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+}

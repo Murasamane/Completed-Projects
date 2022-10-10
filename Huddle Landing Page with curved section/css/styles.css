@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.head-section{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-top: 15px;
+}
+.head-section__trial{
+    padding: 6px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: hsl(321, 100%, 78%);
+    border:2px solid hsl(321, 100%, 78%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+.center-description{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.center-description__title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.center-description__title{
+    margin-bottom: 20px;
+}
+
+.center-description__paragraph{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.center-description__started{
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    padding: 15px 50px;
+    border: navajowhite;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.52);
+    cursor:pointer;
+    margin-top: 30px;
+}
+.center-huddle-background-image{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.center-huddle-background-image__img{
+    max-width: 100%;
+}
+.statistics{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.statistics__icon{
+    color:hsl(321, 100%, 78%);
+
+}
+.statistics__numbers{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+.statistics__name{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #CCCCCC;
+}
+.grow,.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("../img/bg-section-top-desktop-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    margin-bottom: 30px;
+}
+
+.grow__title,.flow__title, .user__title{
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.grow__paragraph,.flow__paragraph,.user__paragraph{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.grow__image img, .flow__image img, .user__image img{
+    height: 300px;
+    width: 300px;
+}
+.flow{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+.ready-to-build{
+    text-align: center;
+    margin-bottom: 6rem;
+    
+
+}
+
+.ready-to-build__title{
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.ready-to-build__button{
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    padding: 15px 50px;
+    border: navajowhite;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.52);
+    cursor:pointer;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+.footer__logo,
+.footer__paragraph,
+.footer__phone,
+.footer__email,
+.footer__title{
+    margin-bottom: 20px;
+}
+
+.footer__social-media{
+    display: flex;
+    gap: 15px;
+}
+
+.footer__sub-btn{
+    padding: 5px 20px;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#search{
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+
+@media(max-width:800px){
+    .statistics{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .grow,.flow,.user{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+}

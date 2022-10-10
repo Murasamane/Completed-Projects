@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+}
+
+.tracking{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 24px;
+    row-gap: 18px;
+    margin: 100px auto;
+}
+.tracking__profile{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+}
+.tracking__profile--bg{
+    background-color: hsl(246, 80%, 60%);
+    color: #fff;
+    border-radius: 15px;
+    padding: 32px;
+}
+.report{
+    font-weight: 300;
+}
+.profile__name{
+    font-size: 32px;
+    font-weight: 300;
+}
+.tracking__profile{
+    grid-row: 1/3;
+}
+.profile__img{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 24px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+.profile__menu{
+    padding: 32px;
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu__link a:visited,
+.menu__link a:link{
+    text-decoration: none;
+    color: hsl(235, 45%, 61%);
+}
+.menu__link a:hover{
+    color: #fff;
+}
+
+
+.tracking__work,.tracking__play,
+.tracking__study,.tracking__exercise,
+.tracking__social,.tracking__self-care{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: hsl(235, 46%, 20%);
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.tracking__work:hover,.tracking__play:hover,
+.tracking__study:hover,.tracking__exercise:hover,
+.tracking__social:hover,.tracking__self-care:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+
+.work__top--bg,.play__top--bg,.study__top--bg,
+.exercise__top--bg,.social__top--bg,.self-care__top--bg{
+    height: 40px;
+
+}
+.work__top--bg{
+    background-image: url("../img/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: hsl(15, 100%, 70%);
+}
+.play__top--bg{
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: hsl(195, 74%, 62%);
+}
+.study__top--bg{
+    background-image: url("../img/icon-study.svg");
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise__top--bg{
+    background-image: url("../img/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: hsl(145, 58%, 55%);
+}
+.social__top--bg{
+    background-image: url("../img/icon-social.svg");
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: hsl(264, 64%, 52%); 
+}
+.self-care__top--bg{
+    background-image: url("../img/icon-self-care.svg");
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: hsl(43, 84%, 65%); 
+}
+.work__top--bg,.play__top--bg,.study__top--bg,
+.exercise__top--bg,.social__top--bg,.self-care__top--bg{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 8px;
+}
+
+
+.work__number,.play__number,.study__number,
+.exercise__number,.social__number,.self-care__number{
+    font-size: 52px;
+    font-weight: 300;
+}
+.work__title,.play__title,.study__title,
+.exersice__title,.social__title,.self-care__title{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.work__flex,.play__flex,.study__flex,
+.exercise__flex,.social__flex,.self-care__flex{
+    display: flex;
+    justify-content: space-around;
+}
+.dots{
+    height: 24px;
+    width: 24px;
+    color: white;
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media(max-width:1000px){
+    .tracking{
+        width: 300px;
+        grid-template-columns: auto;
+        margin: auto;
+
+    }
+}

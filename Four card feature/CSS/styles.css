@@ -1,0 +1,84 @@
+body,*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.head-text{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.normal-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+.bold-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+}
+
+.sub-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    font-size: 14px;
+}
+.four-card-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 18rem;
+    height: 250px;
+    border-radius: 15px;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.supervisor{
+    border-top: 4px solid hsl(180, 62%, 55%);
+    box-shadow: 0px 8px 5px 0px rgba(69,211,211,0.75);
+}
+.team-builder{
+    border-top: 4px solid hsl(0, 78%, 62%);
+    box-shadow: 0px 8px 5px 0px rgba(234,83,83,0.75);
+    margin-bottom: 30px;
+}
+.karma{
+    border-top: 4px solid hsl(34, 97%, 64%);
+    box-shadow: 0px 8px 5px 0px rgba(252,175,74,0.75);
+}
+.calculator{
+    border-top: 4px solid hsl(212, 86%, 64%);
+    box-shadow: 0px 8px 5px 0px rgba(84,158,242,0.75);
+}
+.card-title{
+    color: hsl(234, 12%, 34%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.card-text{
+    color: hsl(229, 6%, 66%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+.card-svg{
+    margin-left: auto;
+    width: 30%;
+}
+
+@media(max-width:904px){
+    .four-card-flex{
+        flex-direction: column;
+    }
+}

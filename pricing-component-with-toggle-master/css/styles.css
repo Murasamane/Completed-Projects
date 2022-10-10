@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right top , left bottom;
+    background-position-y: 0%, 200%;
+
+}
+html{
+    font-size: 62.5%;
+}
+.choices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choices-flex{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.pricing{
+    font-size: 3.6rem;
+}
+.choices-p{
+    font-size: 1.6rem;
+}
+.choices-btn{
+    width: 5rem;
+    padding:0.2rem;
+    border-radius: 2.5rem;
+    display: flex;
+    background-image: linear-gradient(
+        270deg,
+        hsl(236deg 72% 79%) 0%,
+        hsl(236deg 71% 77%) 11%,
+        hsl(237deg 69% 76%) 23%,
+        hsl(237deg 68% 74%) 34%,
+        hsl(236deg 68% 72%) 45%,
+        hsl(236deg 67% 71%) 56%,
+        hsl(237deg 66% 69%) 68%,
+        hsl(237deg 65% 67%) 79%,
+        hsl(237deg 64% 65%) 89%,
+        hsl(237deg 63% 64%) 100%
+      );
+}
+.ball{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+.slide-right{
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+.slide-left{
+    animation: myAnim2 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(2.5rem);
+	}
+}
+
+@keyframes myAnim2 {
+	0% {
+		transform: translateX(2.5rem);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.cards-flex-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90rem;
+    margin: 10rem auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.card{
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    
+
+}
+.card-bs{
+    box-shadow: -1px 0px 29px 9px rgba(179,181,198,0.75);
+-webkit-box-shadow: -1px 0px 29px 9px rgba(179,181,198,0.75);
+-moz-box-shadow: -1px 0px 29px 9px rgba(179,181,198,0.75);
+}
+.flex-b{
+    height: 40rem;
+    background-image: linear-gradient(
+  270deg,
+  hsl(236deg 72% 79%) 0%,
+  hsl(236deg 71% 77%) 11%,
+  hsl(237deg 69% 76%) 23%,
+  hsl(237deg 68% 74%) 34%,
+  hsl(236deg 68% 72%) 45%,
+  hsl(236deg 67% 71%) 56%,
+  hsl(237deg 66% 69%) 68%,
+  hsl(237deg 65% 67%) 79%,
+  hsl(237deg 64% 65%) 89%,
+  hsl(237deg 63% 64%) 100%
+);
+padding-top: 5rem;
+
+}
+
+.card-title{
+    font-size: 1.6rem;
+    color: hsl(233, 13%, 49%);
+}
+.card-price{
+    font-size: 5.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem solid #555;
+    padding-bottom: .5rem;
+    font-weight: 700;
+    color: hsl(232, 13%, 33%);
+}
+.price{
+    font-size: 4rem;
+}
+
+.card-storage,.card-users,.card-send-limit{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 0.1rem solid #000;
+    padding: 1rem 1rem;
+    color: hsl(233, 13%, 49%);
+}
+.flex-b-text{
+    color: #fff;
+    border-bottom-color: #fff;
+}
+.btn:link,.btn:visited{
+    display: inline-block;
+    font-size: 1.4rem;
+    background-image: linear-gradient(
+  270deg,
+  hsl(236deg 72% 79%) 0%,
+  hsl(236deg 71% 77%) 11%,
+  hsl(237deg 69% 76%) 23%,
+  hsl(237deg 68% 74%) 34%,
+  hsl(236deg 68% 72%) 45%,
+  hsl(236deg 67% 71%) 56%,
+  hsl(237deg 66% 69%) 68%,
+  hsl(237deg 65% 67%) 79%,
+  hsl(237deg 64% 65%) 89%,
+  hsl(237deg 63% 64%) 100%
+);
+    color: #fff;
+    padding: 1rem 4rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    transition:all 1s;
+}
+.flex-b-btn:link,.flex-b-btn:visited{
+    background-color: #fff;
+    color:hsl(233, 13%, 49%);
+    padding: 1rem 4rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    font-size: 1.4rem;
+    transition:all 1s;
+}
+
+.flex-b-btn:hover,.flex-b-btn:active{
+    background-image: linear-gradient(
+        270deg,
+        hsl(236deg 72% 79%) 0%,
+        hsl(236deg 71% 77%) 11%,
+        hsl(237deg 69% 76%) 23%,
+        hsl(237deg 68% 74%) 34%,
+        hsl(236deg 68% 72%) 45%,
+        hsl(236deg 67% 71%) 56%,
+        hsl(237deg 66% 69%) 68%,
+        hsl(237deg 65% 67%) 79%,
+        hsl(237deg 64% 65%) 89%,
+        hsl(237deg 63% 64%) 100%
+      );
+    box-shadow: inset 0 0 0 1px #fff;
+    color: #fff;
+}
+
+.btn:hover,.btn:active{
+    color: hsl(237, 63%, 64%);
+    box-shadow: inset 0 0 0 1px hsl(237, 63%, 64%);
+    background-color: #fff;
+    background-image: none;
+}
+
+@media(max-width:900px){
+    .cards-flex-box{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+    }
+}
