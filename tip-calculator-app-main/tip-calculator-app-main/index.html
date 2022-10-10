@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tip calculator app">
+  <meta name="description" content="Tip calculator for anyone">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <h1 class="main-title">SPLIT <br> TTER</h1>
+  <div class="calculator-div">
+    <div class="calc-inputs">
+      <div class="inputs">
+        <div class="bill-div">
+          <label for="bills">Bill</label>
+          <input type="number" name="bill" class="bill" dir="rtl" placeholder="0" required>
+          <img src="images/icon-dollar.svg" class="svg" alt="">
+        </div>
+
+        <p class="select">Select tip %</p>
+        <div class="select-tip">
+          <div class="tips">5&#37;</div>
+          <div class="tips">10&#37;</div>
+          <div class="tips">15&#37;</div>
+          <div class="tips">25&#37;</div>
+          <div class="tips">50&#37;</div>
+          <input class="custom" placeholder="Custom"></input>
+        </div>
+        <div class="number-of-people-div">
+          <label for="num-people" class="regex-label">Number of People <span class="regex-span">Can't be zero</span></label>
+          <input type="number" id="num-people" class="num-people" placeholder="0" dir="rtl">
+          <img src="images/icon-person.svg" class="svg-2" alt="">
+        </div>
+      </div>
+
+      <div class="output">
+        <div class="output-numbers">
+          <div class="tipped-numbers">
+            <div class="tip-amount">
+              <p class="tip-amount-p">Tip Amount</p>
+              <p class="person">/ person</p>
+            </div>
+            <div class="ammount-nums">
+              0.00
+            </div>
+          </div>
+          <div class="total-numbers">
+            <div class="total">
+              <p class="total-p">Total</p>
+              <p class="person">/ person</p>
+            </div>
+            <div class="totals-num">
+              0.00
+            </div>
+          </div>
+        </div>
+        <button class="reset-btn">RESET</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

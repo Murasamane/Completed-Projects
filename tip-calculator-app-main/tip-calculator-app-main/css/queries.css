@@ -1,0 +1,20 @@
+@media(max-width:1010px){
+    html{
+        font-size: 56.25%;
+    }
+    .calculator-div{
+        max-width: 100%;
+    }
+    .calc-inputs{
+        grid-template-columns: 1fr;
+    }
+    .output{
+        gap: 3.2rem;
+    }
+}
+
+@media(max-width:450px){
+    .select-tip{
+        grid-template-columns: 1fr 1fr;
+    }
+}

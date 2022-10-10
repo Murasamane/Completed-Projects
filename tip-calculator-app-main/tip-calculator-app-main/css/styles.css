@@ -1,0 +1,154 @@
+.main-title {
+  text-align: center;
+  margin-top: 5rem;
+  font-family: "Space Mono", monospace;
+  line-height: 1.6;
+  font-size: 3.2rem;
+  color: hsl(183, 100%, 15%);
+  margin-bottom: 5rem;
+}
+.calculator-div {
+  width: 100rem;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+}
+.calc-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+.select-tip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.calculator-div {
+  padding: 3.2rem;
+  border-radius: 2rem;
+}
+
+.tips {
+  background-color: hsl(183, 100%, 15%);
+  color: #fff;
+  padding: 2.4rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+.tips:hover {
+  /* background-color: hsl(172, 67%, 45%); */
+  cursor: pointer;
+}
+.custom {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(184, 14%, 56%);
+  padding: 2.4rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+.custom:focus {
+  box-shadow: inset 0px 0px 5px 0px hsl(172, 67%, 45%);
+  outline: none;
+}
+.custom:focus::placeholder {
+  color: transparent;
+}
+.bill:focus::placeholder,.num-people:focus::placeholder {
+    color: transparent;
+  }
+.bill,
+.select-tip {
+  margin-bottom: 3.2rem;
+}
+
+.select {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 1.5rem;
+  padding: 3.2rem;
+}
+
+.tipped-numbers{
+  margin-bottom: 4.2rem;
+}
+.tipped-numbers,
+.total-numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip-amount-p,
+.total-p {
+  font-size: 1.6rem;
+  color: hsl(189, 41%, 97%);
+}
+
+.ammount-nums,
+.totals-num {
+  font-size: 4.2rem;
+  color: hsl(172, 67%, 45%);
+}
+
+.person {
+  font-size: 1.4rem;
+  color: hsl(184, 14%, 56%);
+}
+
+.reset-btn {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-size: 2rem;
+  padding: 1.2rem 0;
+  border-radius: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+.reset-btn:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+
+.regex-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.regex-span{
+    color: orangered;
+    display: none;
+}
+
+.bill-div,.number-of-people-div{
+    position: relative;
+}
+
+.svg{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+    width: 2rem;
+}
+.svg-2{
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    transform: translateY(-70%);
+    width: 2rem;
+}
+
+.active{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}

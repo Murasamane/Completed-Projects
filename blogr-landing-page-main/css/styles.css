@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: sans-serif;
+}
+/* ************** */
+/* HEADER SECTION */
+/* ************** */
+
+.header-section{
+    background-image:url("../images/bg-pattern-intro-desktop.svg"),linear-gradient(
+        90deg,
+        hsl(13deg 100% 72%) 0%,
+        hsl(12deg 100% 72%) 4%,
+        hsl(12deg 100% 71%) 9%,
+        hsl(11deg 100% 71%) 13%,
+        hsl(11deg 100% 71%) 18%,
+        hsl(10deg 100% 71%) 22%,
+        hsl(9deg 100% 70%) 27%,
+        hsl(9deg 100% 70%) 31%,
+        hsl(8deg 100% 70%) 36%,
+        hsl(7deg 100% 70%) 40%,
+        hsl(6deg 100% 70%) 45%,
+        hsl(6deg 100% 69%) 50%,
+        hsl(5deg 100% 69%) 54%,
+        hsl(4deg 100% 69%) 59%,
+        hsl(3deg 100% 69%) 64%,
+        hsl(2deg 100% 69%) 69%,
+        hsl(1deg 100% 69%) 74%,
+        hsl(0deg 100% 69%) 80%,
+        hsl(359deg 100% 68%) 85%,
+        hsl(358deg 100% 67%) 91%,
+        hsl(357deg 100% 67%) 96%,
+        hsl(356deg 100% 66%) 100%
+      );
+    background-repeat: no-repeat;
+    background-position:left;
+    padding: 6.2rem 3.2rem 12.8rem 3.2rem;
+    border-bottom-left-radius: 10%;
+    margin-bottom: 9.6rem;
+}
+.header{
+    display: flex;
+    gap: 4.8rem;
+    align-items: center;
+    margin: 0 auto 9.6rem auto;
+    width: 100rem;
+    max-width: 100%;
+
+}
+.head-flex{
+    /* display: flex;
+    align-items: center;
+    gap: 6.2rem; */
+    display: flex;
+    align-items: center;
+    gap: 6.2rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.main-navigation__list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.burger-menu-btn{
+    border: none;
+    background: none;
+    display: none;
+}
+.burger-menu-icon{
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+}
+.burger-menu--close{
+    display: none;
+}
+.arrow{
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.dropdown{
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 0;
+    width: 15rem;
+    border-radius: 0.5rem;
+    padding: 2.4rem;
+    color: black;
+    background-color: #fff;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 1);
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.active .dropdown{
+    display: block;
+}
+.active .arrow{
+    transform: rotate(180deg);
+}
+.active .dropdown-btn{
+    text-decoration: underline; 
+}
+.dropdown-btn{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: "Ubuntu",sans-serif;
+}
+.dropdown-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+.dropdown-anchor:link,.dropdown-anchor:visited{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6rem;
+    font-family: "Ubuntu",sans-serif;
+}
+
+
+
+.nav-links{
+    display: grid;
+    position: relative;
+    gap: 0.5rem;
+}
+.users{
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+.btn:link,.btn:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: "Ubuntu",sans-serif;
+}
+.btn--signup:link,.btn--signup:visited{
+    padding: 1.2rem 3.2rem;
+    background-color: #fff;
+    color: #ff525d;
+    border-radius: 2.5rem;
+    transition: all 0.3s;
+}
+
+.btn--signup:hover{
+    background-color: rgba(255, 255, 255, 0.512);
+    color: #fff;
+}
+.header-text-box{
+    text-align: center;
+}
+.heading-primary{
+    font-family: "Overpass",sans-serif;
+    font-weight: 600;
+    font-size: 4.8rem;
+    color: #fff;
+    margin-bottom: 2.4rem;
+}
+
+.header-paragraph{
+    font-family: "Overpass",sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 3.2rem;
+}
+
+.action-links{
+    display: flex;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+}
+.btn--start:link,.btn--start:visited{
+    padding: 1.2rem 3.2rem;
+    background-color: #fff;
+    color: hsl(356, 100%, 66%);
+    border-radius: 2.5rem;
+    transition: all 0.3s;
+}
+.btn--start:hover{
+    background-color: rgba(255, 255, 255, 0.512);
+    color: #fff;
+}
+.btn--learn:link,.btn--learn:visited{
+    border: 0.1rem solid #fff;
+    padding: 1.2rem 3.2rem;
+    border-radius: 2.5rem;
+    transition: all 0.3s;
+}
+.btn--learn:hover{
+    background-color: #fff;
+    color:hsl(356, 100%, 66%) ;
+}
+
+/* ************************* */
+/* DESIGN SECTION */
+/* ************************* */
+.design-text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    padding: 4.8rem;
+}
+.heading-secondary{
+    font-size: 3.2rem;
+    color: hsl(208, 49%, 24%);
+    font-family: "Overpass",sans-serif;
+}
+.heading-tertuary{
+    font-size: 2.4rem;
+    color: hsl(208, 49%, 24%);
+    font-family: "Overpass",sans-serif;
+    margin-bottom: 1.8rem;
+}
+.design-paragraph{
+    font-family: "Overpass",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    color: #555;
+}
+.design-img{
+    width: 100%;
+}
+
+/* ****************************** */
+/* INFRASTRUCTURE SECTION */
+/* ****************************** */
+.infrastructure{
+    margin-bottom: 9.6rem;
+}
+.infra{
+    height: 60rem;
+    background-image:url("../images/bg-pattern-circles.svg"), linear-gradient(
+        50deg,
+        hsl(237deg 18% 21%) 0%,
+        hsl(237deg 19% 22%) 53%,
+        hsl(237deg 19% 23%) 67%,
+        hsl(237deg 20% 25%) 74%,
+        hsl(237deg 20% 26%) 79%,
+        hsl(237deg 21% 27%) 82%,
+        hsl(237deg 21% 28%) 85%,
+        hsl(237deg 22% 29%) 87%,
+        hsl(237deg 22% 31%) 91%,
+        hsl(237deg 23% 32%) 100%
+      );
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+.infrastruture-img-box{
+    padding: 3.2rem 4.8rem;
+    
+}
+.infra-img{
+    width: 100%;
+    transform: scale(1.35);
+}
+.infrastruture-text-box{
+    padding: 4.8rem;
+}
+.heading-infra{
+    font-size: 3.2rem;
+    color: #fff;
+    font-family: "Overpass",sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+.infra-paragraph{
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: "Overpass",sans-serif;
+    font-weight: 300;
+}
+
+/* ****************************** */
+/* FOOTER SECTION */
+/* ****************************** */
+
+.footer-section{
+    background-color: hsl(240, 10%, 16%);
+    padding: 9.8rem;
+    border-top-right-radius:10%;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1.6rem;
+}
+
+.footer-links{
+    color: hsl(240, 2%, 79%);
+    font-size: 1.2rem;
+    font-family: "Ubuntu",sans-serif;
+}

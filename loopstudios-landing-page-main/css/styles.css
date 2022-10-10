@@ -1,0 +1,229 @@
+.section-header{
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 12.8rem;
+    margin-bottom: 9.6rem;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3.2rem 0;
+    margin-bottom: 9.6rem;
+}
+.main-nav-ul{
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+}
+.nav-link:link,.nav-link:visited{
+    font-family: 'Alata', sans-serif;
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.nav-link:hover{
+    background-image: linear-gradient(#fff 0 0);
+    background-position: bottom center; /*Adjust the background-position to move the line*/
+    background-size: 80% 2px; /*Adjust the background size to control length and height*/
+    background-repeat: no-repeat;
+    padding-bottom: 4px; /* this can also control the position */
+}
+
+.burger-menu{
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.icon-burger{
+    height: 4rem;
+    width: 4rem;
+    color: #fff;
+}
+.hero-text-box{
+    width: 55rem;
+    max-width: 100%;
+    padding:2.4rem 3.2rem;
+    border: 1px solid #fff;
+    justify-self: center;
+    align-self: center;
+}
+.hero-text{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 6.2rem;
+    color: #fff;
+}
+.hero-below{
+    width: 130rem;
+    max-width: 100%;
+    padding: 0 3.2rem;
+    margin: auto;
+    margin-bottom: 9.6rem;
+}
+.flex-box{
+    display: flex;
+}
+.flex-title{
+    margin-bottom: 3.2rem;
+}
+.flex-box-text{
+    align-self: flex-end;
+    padding: 4.8rem;
+    background-color: #fff;
+    margin-left: -15rem;
+}
+
+.title-with-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4.8rem;
+}
+.gallery-section{
+    width: 130rem;
+    max-width: 100%;
+    padding: 0 3.2rem;
+    margin: auto;
+    margin-bottom: 9.8rem;
+}
+
+.action-btn{
+    padding: 0.5rem 3.2rem;
+    background: none;
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+    font-family: 'Alata', sans-serif;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+.action-btn:hover{
+    background-color: hsl(0, 0%, 0%);
+    color: #fff;
+}
+
+.earth{
+    background-image: url("../images/desktop/image-deep-earth.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.arcade{
+    background-image: url("../images/desktop/image-night-arcade.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.soccer{
+    background-image: url("../images/desktop/image-soccer-team.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.the-grid{
+    background-image: url("../images/desktop/image-grid.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.above{
+    background-image: url("../images/desktop/image-from-above.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.pocket{
+    background-image: url("../images/desktop/image-pocket-borealis.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.curiosity{
+    background-image: url("../images/desktop/image-curiosity.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.fisheye{
+    background-image: url("../images/desktop/image-fisheye.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.grid-items-text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+.grid-items{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 40rem;
+    padding: 4.8rem 5.2rem;
+}
+
+.grid-items:hover{
+    box-shadow: inset 0 0 0 20rem rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.4) ;
+    background-blend-mode:multiply;
+
+}
+.grid-items:hover>.grid-items-text{
+    color: #000;
+}
+.footer{
+    background-color: hsl(0, 0%, 0%);
+    padding: 4.8rem 9.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-box{
+    padding: 2.4rem;
+}
+.footer-logo-box{
+    margin-bottom: 3.2rem;
+}
+.footer-nav-list{
+    display: flex;
+    gap: 3.2rem;
+    list-style: none;
+}
+.footer-nav-link:link,.footer-nav-link:visited{
+    font-family: 'Alata', sans-serif;
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.footer-nav-link:hover{
+    background-image: linear-gradient(#fff 0 0);
+    background-position: bottom center; /*Adjust the background-position to move the line*/
+    background-size: 80% 2px; /*Adjust the background size to control length and height*/
+    background-repeat: no-repeat;
+    padding-bottom: 4px; /* this can also control the position */
+}
+
+.social{
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+    margin-bottom: 3.2rem;
+    justify-self: end;
+}
+.socials{
+    display: grid;
+}
+.icon{
+    font-size: 2.4rem;
+    fill: #fff;
+}
+.icon:hover{
+    cursor: pointer;
+    background-image: linear-gradient(#fff 0 0);
+    background-position: bottom center; /*Adjust the background-position to move the line*/
+    background-size: 80% 2px; /*Adjust the background size to control length and height*/
+    background-repeat: no-repeat;
+}
+.copy{
+    color: hsl(0, 0%, 55%);
+    font-size: 1.6rem;
+}

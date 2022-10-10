@@ -1,0 +1,121 @@
+/**
+--- 01 TYPOGRAPHY SYSTEM
+
+FONT SIZE SYSTEM (px)   
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- FONT FAMILY:
+    Overpass;
+    Ubuntu;
+- FONT WEIGHT:
+Default:400
+Medium 500
+Semi-bold600
+Bold 700
+- LINE HEIGHT:
+Default: 1
+Small:1.05
+Medium:1.2
+large:1.8
+Paragraph Default:1.6
+    letter-spacing:
+    -0.5px
+    -0.75px
+
+--- 02 COLORS
+
+- Primary:;
+- Tints:
+
+- Shades: 
+
+- Accents: 
+- Greys: 
+
+--- 05 SHADOWS 
+
+--- 06 BORDER-RAdius
+
+
+-- 07 WHITESPACE
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+.text-align--center{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+}
+.grid--2-cols{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+}
+.grid--4-cols{
+    grid-template-columns: repeat(4,1fr);
+    align-items: flex-start;
+}
+
+.margin-bottom-md{
+    margin-bottom: 4.8rem;
+}
+
+
+.heading-footer{
+    font-family: "Ubuntu",sans-serif;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 3.2rem;
+}
+
+/* .arrow{
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.dropdown{
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 0;
+    width: 15rem;
+    border-radius: 0.5rem;
+    padding: 2.4rem;
+    color: black;
+    background-color: #fff;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.active .dropdown{
+    display: block;
+}
+.active .arrow{
+    transform: rotate(180deg);
+}
+.active .dropdown-btn{
+    text-decoration: underline; 
+}
+.dropdown-btn{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: "Ubuntu",sans-serif;
+}
+.dropdown-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+.dropdown-anchor:link,.dropdown-anchor:visited{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6rem;
+    font-family: "Ubuntu",sans-serif;
+} */
+
+
+

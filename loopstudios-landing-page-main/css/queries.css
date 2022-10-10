@@ -1,0 +1,103 @@
+@media(max-width:1135px){
+    html{
+        font-size: 56.25%;
+    }
+    .flex-box{
+        flex-direction: column;
+    }
+    .flex-box-text{
+        margin-left: 0;
+    }
+    .gallery-show{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:720px){
+    .footer,.footer-nav-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social{
+        justify-self: center;
+    }
+    .copy{
+        text-align: center;
+    }
+    .section-header{
+        position: relative;
+    }
+    .main-nav-ul{
+        display: none;
+        background-color: #000;
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 2.4rem;
+        height: 100%;
+    }
+    .company-logo{
+        position:relative;
+        z-index: 999999;
+    }
+    .burger-menu{
+        display: block;
+    }
+
+    .gallery-show{
+        margin-bottom: 3.2rem;
+    }
+    .action-btn{
+        display: none;
+    }
+    .title-with-action{
+        justify-content: center;
+    }
+    .bottom{
+        display: block;
+        margin: auto;
+        padding: 0.5rem 3.2rem;
+        background: none;
+        color: hsl(0, 0%, 0%);
+        cursor: pointer;
+        font-family: 'Alata', sans-serif;
+        font-size: 1.5rem;
+        transition: all 0.3s;
+
+    }
+    .bottom:hover{
+        background-color: hsl(0, 0%, 0%);
+        color: #fff;
+    }
+}
+
+@media(max-width:545px){
+    .gallery-show{
+        grid-template-columns: 1fr;
+        
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 1.2rem;
+    }
+    .hero-text-box{
+        width: 100%;
+        padding: 2.4rem;
+    }
+    .hero-text{
+        font-size: 3.2rem;
+    }
+    .heading-secondary{
+        font-size: 3.2rem;
+    }
+    .flex-box-text{
+        padding: 1.8rem;
+    }
+}

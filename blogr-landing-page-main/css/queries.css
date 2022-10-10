@@ -1,0 +1,109 @@
+@media(max-width:1000px){
+    html{
+        font-size: 56.25%;
+    }
+    .grid--2-cols{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .design-img-box{
+        grid-row: 1;
+    }
+    .design-img{
+        width: 50%;
+    }
+    .infra{
+        height: auto;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .infra-img{
+        transform: scale(1.5);
+        width: 70%;
+    }
+    .grid--4-cols{
+        grid-template-columns: 1fr;
+        row-gap: 2.4rem;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media(max-width:730px){
+    .head-flex{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,10%);
+        background-color: #fff;
+        padding: 3.2rem;
+    }
+    .dropdown-btn{
+        color: #333;
+    }
+    .arrow{
+        color: hsl(353, 100%, 62%);
+    }
+    .dropdown{
+        position: static;
+        background-color: hsla(240, 3%, 79%, 0.138);
+        box-shadow: none;
+    }
+    .main-navigation__list,.users{
+        flex-direction: column;
+        
+    }
+    .header{
+        justify-content: space-between;
+        position: relative;
+    }
+    .burger-menu-btn{
+        display: block;
+    }
+    .btn--login:link,.btn--login:visited{
+        color: hsl(208, 49%, 24%);
+    }
+    .btn--signup:link,.btn--signup:visited{
+        color: #fff;
+        background-image: linear-gradient(
+            90deg,
+            hsl(13deg 100% 72%) 0%,
+            hsl(12deg 100% 72%) 4%,
+            hsl(12deg 100% 71%) 9%,
+            hsl(11deg 100% 71%) 13%,
+            hsl(11deg 100% 71%) 18%,
+            hsl(10deg 100% 71%) 22%,
+            hsl(9deg 100% 70%) 27%,
+            hsl(9deg 100% 70%) 31%,
+            hsl(8deg 100% 70%) 36%,
+            hsl(7deg 100% 70%) 40%,
+            hsl(6deg 100% 70%) 45%,
+            hsl(6deg 100% 69%) 50%,
+            hsl(5deg 100% 69%) 54%,
+            hsl(4deg 100% 69%) 59%,
+            hsl(3deg 100% 69%) 64%,
+            hsl(2deg 100% 69%) 69%,
+            hsl(1deg 100% 69%) 74%,
+            hsl(0deg 100% 69%) 80%,
+            hsl(359deg 100% 68%) 85%,
+            hsl(358deg 100% 67%) 91%,
+            hsl(357deg 100% 67%) 96%,
+            hsl(356deg 100% 66%) 100%
+          );
+    }
+    .close .burger-menu--close{
+        display: block;
+    }
+    .close .burger-menu--open{
+        display: none;
+    }
+}
+
+@media(max-width:384px){
+    .action-links{
+        flex-direction: column;
+    }
+}
