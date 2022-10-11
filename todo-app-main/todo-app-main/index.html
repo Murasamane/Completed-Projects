@@ -33,7 +33,7 @@
         <ul class="outputs">
           <li class="output-list-item">
             <label class="container">
-              <input type="checkbox">
+              <input type="checkbox" class="checkbox">
               <span class="checkmark"></span>
             </label>
             <p class="list-item">Complete online javascript course</p>
@@ -41,24 +41,36 @@
               <img src="images/icon-cross.svg"  class="delete-img" alt="">
             </button>
           </li>
-          
+
+
+
         </ul>
       </div>
 
       <div class="footer-to-do">
-        <div class="todo-count">5 items left</div>
-        <div class="todo-categories">
-          <button class="todo-btn todo-all">All</button>
-          <button class="todo-btn todo-active">Active</button>
-          <button class="todo-btn todo-completed">Completed</button>
+        <div class="footer-grid">
+          <div class="todo-count"><span class="item-count"></span> items left</div>
+          <div class="todo-categories">
+            <button class="todo-btn todo-all">All</button>
+            <button class="todo-btn todo-active">Active</button>
+            <button class="todo-btn todo-completed">Completed</button>
+          </div>
+          <button class="todo-clear-completed-btn">Clear Completed</button>
         </div>
-        <button class="todo-clear-completed-btn">Clear Completed</button>
+        
       </div>
     </div>
+    <div class="class2">
+      <button class="todo-btn todo-all">All</button>
+      <button class="todo-btn todo-active">Active</button>
+      <button class="todo-btn todo-completed">Completed</button>
+    </div>
+  </div>
+  <div class="drag-and-drop">
+    Drag and drop to reoder list
   </div>
 
-
-
+<script src="js/main.js"></script>
 </body>
 </html>
 
