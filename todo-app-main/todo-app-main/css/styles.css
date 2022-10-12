@@ -215,9 +215,7 @@
 .todo-btn:hover {
   color: hsl(236, 33%, 92%);
 }
-.todo-all {
-  color: hsl(220, 98%, 61%);
-}
+
 .todo-categories {
   display: flex;
   gap: 3.2rem;
@@ -256,4 +254,8 @@
 
 .checked-item{
   text-decoration: line-through;
+}
+
+.active{
+  color: rgb(58 123 253);;
 }
