@@ -18,7 +18,7 @@
   <div class="to-do-list-div">
     <header class="todo-head">
       <h1 class="todo-title">T O D O</h1>
-      <button class="todo-btn">
+      <button class="todo-btn-theme">
         <img src="images/icon-sun.svg" class="svg svg-sun" alt="sun icon">
         <img src="images/icon-moon.svg" class="svg svg-moon" alt="moon icon">
       </button>
@@ -99,24 +99,23 @@
         </ul>
       </div>
 
-      <div class="footer-to-do">
-        <div class="footer-grid">
-          <div class="todo-count"><span class="item-count"></span> items left</div>
-          <div class="todo-categories">
-            <button class="todo-btn todo-all active">All</button>
-            <button class="todo-btn todo-active">Active</button>
-            <button class="todo-btn todo-completed">Completed</button>
-          </div>
-          <button class="todo-clear-completed-btn">Clear Completed</button>
+      
+    </div>
+    <div class="footer-to-do">
+      <div class="footer-grid">
+        <div class="todo-count"><span class="item-count"></span> items left</div>
+        <div class="todo-categories">
+          <button class="todo-btn todo-all active">All</button>
+          <button class="todo-btn todo-active">Active</button>
+          <button class="todo-btn todo-completed">Completed</button>
         </div>
-        
+        <div class="complete-todo">
+          <button class="todo-clear-completed-btn">Clear Completed</button>
+
+        </div>
       </div>
     </div>
-    <!-- <div class="class2">
-      <button class="todo-btn todo-all active">All</button>
-      <button class="todo-btn todo-active">Active</button>
-      <button class="todo-btn todo-completed">Completed</button>
-    </div> -->
+
   </div>
   <div class="drag-and-drop">
     Drag and drop to reoder list
@@ -125,16 +124,3 @@
 <script src="js/main.js"></script>
 </body>
 </html>
-
-
-<!-- Todo
-
-Add dynamic number  items left
-
-All
-Active 
-Completed
-
-Clear Completed
-
-Drag and drop to reorder list -->

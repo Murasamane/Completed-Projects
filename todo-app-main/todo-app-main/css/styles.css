@@ -20,7 +20,7 @@
   color: hsl(0, 0%, 98%);
   font-weight: 700;
 }
-.todo-btn {
+.todo-btn-theme {
   background: none;
   border: none;
   cursor: pointer;
@@ -29,6 +29,10 @@
   opacity: 0;
   width: 0;
   height: 0;
+  transition: all 0.5s;
+}
+
+.svg-sun{
   transition: all 0.5s;
 }
 
@@ -47,9 +51,7 @@
   border: none;
   border-radius: 1rem;
   background-color: hsl(235, 24%, 19%);
-  box-shadow: -2px 4px 18px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -2px 4px 18px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 4px 18px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s;
 }
 
 /*///////////////////////////////////////////////////*/
@@ -62,13 +64,15 @@
 
 .main-inputs-outputs {
   background-color: hsl(235, 24%, 19%);
-  box-shadow: -2px 4px 18px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -2px 4px 18px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 4px 18px 0px rgba(0, 0, 0, 0.75);
+
+  transition: all 0.5s;
 }
 
 .outputs {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 .output-list-item {
   display: grid;
@@ -80,10 +84,9 @@
   width: 100%;
   padding: 2.4rem;
   border: none;
-  border-radius: 0.7rem;
-  border-bottom: 1px solid hsl(235, 19%, 35%);
   background-color: hsl(235, 24%, 19%);
-  transition: all 0.3s;
+  border-bottom: 1px solid hsl(236, 9%, 61%);
+  transition: all 0.5s;
 }
 
 .delete {
@@ -203,15 +206,23 @@
   justify-items: center;
   align-items: center;
   padding: 1.6rem 2.4rem;
+  background-color: rgb(37 39 60);
+  transition: all 0.5s;
 }
 .todo-count {
   color: hsl(234, 11%, 52%);
   font-size: 1.3rem;
 }
+/* .complete-todo{
+  justify-self: right;
+  padding: 1.6rem 2.4rem;
+} */
 .todo-btn {
   color: hsl(234, 11%, 52%);
   cursor: pointer;
   transition: all 0.3s;
+  background: none;
+  border: none;
 }
 .todo-btn:hover {
   color: hsl(236, 33%, 92%);
@@ -221,8 +232,9 @@
   display: flex;
   gap: 3.2rem;
   cursor: pointer;
+
 }
-.class2 {
+/* .class2 {
   display: none;
   justify-content: center;
   align-content: center;
@@ -230,7 +242,7 @@
   padding: 1.6rem 2.4rem;
   cursor: pointer;
   background-color: rgb(37 39 60);
-}
+} */
 
 .todo-clear-completed-btn {
   background: none;
@@ -267,3 +279,25 @@
 
 }
 
+.light{
+  background-image: url('../images/bg-desktop-light.jpg');
+  background-color:hsl(0, 0%, 98%);
+}
+.light-theme{
+  background-color: rgb(228, 229, 241);
+  color: hsl(235, 19%, 35%);
+}
+
+.disabled-sun{
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: all 0.5s;
+}
+
+.active-moon{
+  opacity: 1;
+  width: auto;
+  height: auto;
+  transition: all 0.5s;
+}

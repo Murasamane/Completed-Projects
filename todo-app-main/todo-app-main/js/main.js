@@ -122,3 +122,17 @@ document.querySelector(".todo-active").addEventListener("click", (e) => {
 document.querySelector(".todo-all").addEventListener("click", (e) => {
   filteringAll();
 });
+
+
+document.querySelector('.todo-btn-theme').addEventListener('click',e=>{
+  document.body.classList.toggle('light');
+  document.querySelector('.main-inputs-outputs').classList.toggle('light-theme');
+  document.querySelector('.to-do__input').classList.toggle('light-theme');
+  document.querySelectorAll('.output-list-item').forEach(item=>{
+    item.classList.toggle('light-theme');
+  })
+  document.querySelector('.footer-grid').classList.toggle('light-theme')
+  document.querySelector('.svg-sun').classList.toggle('disabled-sun');
+  document.querySelector('.svg-moon').classList.toggle('active-moon')
+  todoCategories.classList.toggle('light-border')
+})
