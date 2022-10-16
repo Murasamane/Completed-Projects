@@ -1,115 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="description" content="To do application for anyone to use">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/queries.css">
-  <title>Frontend Mentor | Todo app</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="To do application for anyone to use" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="to-do-list-div">
+      <header class="todo-head">
+        <h1 class="todo-title">T O D O</h1>
+        <button class="todo-btn-theme" type="button">
+          <img src="images/icon-sun.svg" class="svg svg-sun" alt="sun icon" />
+          <img
+            src="images/icon-moon.svg"
+            class="svg svg-moon"
+            alt="moon icon"
+          />
+        </button>
+      </header>
+      <form class="input-todo">
+        <label for="todo-item" class="input-label">
+          <input
+            type="text"
+            class="to-do__input"
+            id="todo-item"
+            placeholder="Currently Typing"
+            name="todo"
+          />
+        </label>
+      </form>
+      <div class="main-inputs-outputs">
+        <div class="main-outputs">
+          <ul class="outputs">
+            <li class="output-list-item" draggable="true">
+              <div class="container">
+                <input type="checkbox" class="checkbox" name="checkedInput" />
+                <span class="checkmark"></span>
+              </div>
+              <p class="list-item">Complete online javascript course</p>
+              <div class="delete">
+                <img
+                  src="images/icon-cross.svg"
+                  width="18"
+                  height="18"
+                  class="delete-img"
+                  alt=""
+                />
+              </div>
+            </li>
 
-  <div class="to-do-list-div">
-    <header class="todo-head">
-      <h1 class="todo-title">T O D O</h1>
-      <button class="todo-btn-theme">
-        <img src="images/icon-sun.svg" class="svg svg-sun" alt="sun icon">
-        <img src="images/icon-moon.svg" class="svg svg-moon" alt="moon icon">
-      </button>
-    </header>
-    <form class="input-todo">
-      <label for="todo-item" class="input-label">
-      <input type="text" class="to-do__input" id="todo-item" placeholder="Currently Typing" name="todo">
-    </label>
-    </form>
-    <div class="main-inputs-outputs">
-      <div class="main-outputs">
-        <ul class="outputs">
-          <li class="output-list-item" draggable="true">
-            <label class="container" >
-              <input type="checkbox" class="checkbox" name="checkedInput">
-              <span class="checkmark"></span>
-            </label>
-            <p class="list-item">Complete online javascript course</p>
-            <button class="delete">
-              <img src="images/icon-cross.svg"  class="delete-img" alt="">
-            </button>
-          </li>
+            <li class="output-list-item" draggable="true">
+              <div class="container">
+                <input type="checkbox" class="checkbox" name="checkedInput" />
+                <span class="checkmark"></span>
+              </div>
+              <p class="list-item">Jog around the park 3x</p>
+              <div class="delete">
+                <img
+                  src="images/icon-cross.svg"
+                  width="18"
+                  height="18"
+                  class="delete-img"
+                  alt=""
+                />
+              </div>
+            </li>
 
-          <li class="output-list-item" draggable="true">
-            <label class="container" >
-              <input type="checkbox" class="checkbox" name="checkedInput">
-              <span class="checkmark"></span>
-            </label>
-            <p class="list-item">Jog around the park 3x</p>
-            <button class="delete">
-              <img src="images/icon-cross.svg"  class="delete-img" alt="">
-            </button>
-          </li>
+            <li class="output-list-item" draggable="true">
+              <div class="container">
+                <input type="checkbox" class="checkbox" name="checkedInput" />
+                <span class="checkmark"></span>
+              </div>
+              <p class="list-item">10 minute meditation</p>
+              <div class="delete">
+                <img
+                  src="images/icon-cross.svg"
+                  width="18"
+                  height="18"
+                  class="delete-img"
+                  alt=""
+                />
+              </div>
+            </li>
 
-          <li class="output-list-item" draggable="true">
-            <label class="container" >
-              <input type="checkbox" class="checkbox" name="checkedInput">
-              <span class="checkmark"></span>
-            </label>
-            <p class="list-item">10 minute meditation</p>
-            <button class="delete">
-              <img src="images/icon-cross.svg"  class="delete-img" alt="">
-            </button>
-          </li>
+            <li class="output-list-item" draggable="true">
+              <div class="container">
+                <input type="checkbox" class="checkbox" name="checkedInput" />
+                <span class="checkmark"></span>
+              </div>
+              <p class="list-item">Read for 1 hour</p>
+              <div class="delete">
+                <img
+                  src="images/icon-cross.svg"
+                  width="18"
+                  height="18"
+                  class="delete-img"
+                  alt=""
+                />
+              </div>
+            </li>
 
-          <li class="output-list-item" draggable="true">
-            <label class="container" >
-              <input type="checkbox" class="checkbox" name="checkedInput">
-              <span class="checkmark"></span>
-            </label>
-            <p class="list-item">Read for 1 hour</p>
-            <button class="delete">
-              <img src="images/icon-cross.svg"  class="delete-img" alt="">
-            </button>
-          </li>
-
-          <li class="output-list-item" draggable="true">
-            <label class="container" >
-              <input type="checkbox" class="checkbox" name="checkedInput">
-              <span class="checkmark"></span>
-            </label>
-            <p class="list-item">Pick up the groceries</p>
-            <button class="delete">
-              <img src="images/icon-cross.svg"  class="delete-img" alt="">
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      
-    </div>
-    <div class="footer-to-do">
-      <div class="footer-grid">
-        <div class="todo-count"><span class="item-count"></span> items left</div>
-        <div class="todo-categories">
-          <button class="todo-btn todo-all active">All</button>
-          <button class="todo-btn todo-active">Active</button>
-          <button class="todo-btn todo-completed">Completed</button>
+            <li class="output-list-item" draggable="true">
+              <div class="container">
+                <input type="checkbox" class="checkbox" name="checkedInput" />
+                <span class="checkmark"></span>
+              </div>
+              <p class="list-item">Pick up the groceries</p>
+              <div class="delete">
+                <img
+                  src="images/icon-cross.svg"
+                  width="18"
+                  height="18"
+                  class="delete-img"
+                  alt=""
+                />
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="complete-todo">
-          <button class="todo-clear-completed-btn">Clear Completed</button>
-
+      </div>
+      <div class="footer-to-do">
+        <div class="footer-grid">
+          <div class="todo-count">
+            <span class="item-count"></span> items left
+          </div>
+          <div class="todo-categories">
+            <button class="todo-btn todo-all active">All</button>
+            <button class="todo-btn todo-active">Active</button>
+            <button class="todo-btn todo-completed">Completed</button>
+          </div>
+          <div class="complete-todo">
+            <button class="todo-clear-completed-btn">Clear Completed</button>
+          </div>
         </div>
       </div>
     </div>
+    <div class="drag-and-drop">Drag and drop to reoder list</div>
 
-  </div>
-  <div class="drag-and-drop">
-    Drag and drop to reoder list
-  </div>
-
-<script defer src="js/main.js"></script>
-</body>
+    <script defer src="js/main.js"></script>
+  </body>
 </html>

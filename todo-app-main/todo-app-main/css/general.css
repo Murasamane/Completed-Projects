@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background-color:hsl(235, 21%, 11%);
+    background-color:#181824;
     background-image: url('../images/bg-desktop-dark.jpg');
     background-repeat: no-repeat;
     background-size:contain;

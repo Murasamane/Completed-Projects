@@ -11,14 +11,14 @@ document.querySelector(".item-count").textContent =
 const template = (todo) => {
   const html = `
   <li class="output-list-item" draggable="true">
-  <label class="container">
+  <div class="container">
     <input type="checkbox" class="checkbox"name="checkedInput">
     <span class="checkmark"></span>
-  </label>
+  </div>
   <p class="list-item">${todo}</p>
-  <button class="delete">
-    <img src="images/icon-cross.svg"  class="delete-img" alt="">
-  </button>
+  <div class="delete">
+    <img src="images/icon-cross.svg" width="18" height="18"  class="delete-img" alt="">
+  </div>
 </li>
   `;
 
@@ -167,10 +167,10 @@ outputUl.addEventListener("dragover", (e) => {
   const drags = document.querySelector(".dragging");
   if (afterElement == null) {
     outputUl.appendChild(drags);
-    console.clear()
+    console.clear();
   } else {
     outputUl.insertBefore(drags, afterElement);
-    console.clear()
+    console.clear();
   }
 });
 
@@ -192,6 +192,3 @@ function getDragAfterElement(container, y) {
     { offset: Number.NEGATIVE_INFINITY }
   ).element;
 }
-
-
-
