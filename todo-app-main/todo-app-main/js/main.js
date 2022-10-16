@@ -11,10 +11,10 @@ document.querySelector(".item-count").textContent =
 const template = (todo) => {
   const html = `
   <li class="output-list-item" draggable="true">
-  <div class="container">
+  <label class="container">
     <input type="checkbox" class="checkbox"name="checkedInput">
     <span class="checkmark"></span>
-  </div>
+  </label>
   <p class="list-item">${todo}</p>
   <div class="delete">
     <img src="images/icon-cross.svg" width="18" height="18"  class="delete-img" alt="">
