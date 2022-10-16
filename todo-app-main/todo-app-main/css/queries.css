@@ -49,4 +49,7 @@
   .light{
     background-image: url('../images/bg-mobile-light.jpg');
   }
+  .drag-and-drop{
+    display: none;
+  }
 }
