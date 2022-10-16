@@ -4,7 +4,7 @@
 .to-do-list-div {
   width: 60rem;
   max-width: 100%;
-  margin: 10rem auto;
+  margin: 5rem auto 0rem auto;
   padding: 2.4rem;
 }
 
@@ -87,6 +87,7 @@
   background-color: hsl(235, 24%, 19%);
   border-bottom: 1px solid hsl(236, 9%, 61%);
   transition: all 0.5s;
+  cursor: move;
 }
 
 .delete {
@@ -259,6 +260,7 @@
   font-size: 1.6rem;
   text-align: center;
   color: hsl(234, 11%, 52%);
+  margin: 5rem auto;
 }
 /*///////////////////////////////////////////////////*/
 /* Main display section end */
@@ -300,4 +302,9 @@
   width: auto;
   height: auto;
   transition: all 0.5s;
+}
+
+
+.output-list-item.dragging{
+  opacity: 0.5;
 }

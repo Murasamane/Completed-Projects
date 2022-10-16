@@ -9,7 +9,7 @@ document.querySelector(".item-count").textContent =
 
 const template = (todo) => {
   const html = `
-  <li class="output-list-item">
+  <li class="output-list-item" draggable="true">
   <label class="container">
     <input type="checkbox" class="checkbox"name="checkedInput">
     <span class="checkmark"></span>
@@ -136,3 +136,41 @@ document.querySelector('.todo-btn-theme').addEventListener('click',e=>{
   document.querySelector('.svg-moon').classList.toggle('active-moon')
   todoCategories.classList.toggle('light-border')
 })
+
+// DRAG AND DROP
+
+const draggable = document.querySelectorAll('.output-list-item');
+const drags = [...draggable]
+draggable.forEach(draggable =>{
+  draggable.addEventListener('dragstart', ()=>{
+    draggable.classList.add('dragging');
+  })
+  draggable.addEventListener('dragend',()=>{
+    draggable.classList.remove('dragging');
+  })
+})
+
+outputUl.addEventListener('dragover',(e)=>{
+  e.preventDefault();
+  const afterElement = getDragAfterElement(outputUl, e.clientY)
+  const draggable = document.querySelector('.dragging');
+  if(afterElement == null){
+    outputUl.appendChild(draggable)
+  }else{
+    outputUl.insertBefore(draggable , afterElement)
+  }
+})
+
+function getDragAfterElement(container,y){
+  const draggableElements = [...container.querySelectorAll('.output-list-item:not(.dragging)')]
+
+  return draggableElements.reduce((closest,child)=>{
+    const box = child.getBoundingClientRect();
+    const offset = y-box.top - box.height /2 
+    if(offset < 0 && offset > closest.offset){
+      return {offset: offset, element:child}
+    }else{
+      return closest;
+    }
+  },{offset:Number.NEGATIVE_INFINITY}).element
+}
