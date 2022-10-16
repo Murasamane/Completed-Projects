@@ -4,6 +4,7 @@ const outputUl = document.querySelector(".outputs");
 const clear = document.querySelector(".todo-clear-completed-btn");
 const todoCategories = document.querySelector(".todo-categories");
 const todoBtns = document.querySelectorAll(".todo-btn");
+const draggable = document.querySelectorAll(".output-list-item");
 document.querySelector(".item-count").textContent =
   document.querySelectorAll(".output-list-item").length;
 
@@ -20,6 +21,7 @@ const template = (todo) => {
   </button>
 </li>
   `;
+
   outputUl.insertAdjacentHTML("afterbegin", html);
   document.querySelector(".item-count").textContent =
     document.querySelectorAll(".output-list-item").length;
@@ -68,8 +70,6 @@ todoCategories.addEventListener("click", (e) => {
     currentEl.add("active");
   }
 });
-
-
 
 const filteringCompleted = () => {
   const arr = Array.from(outputUl.children);
@@ -123,54 +123,74 @@ document.querySelector(".todo-all").addEventListener("click", (e) => {
   filteringAll();
 });
 
-
-document.querySelector('.todo-btn-theme').addEventListener('click',e=>{
-  document.body.classList.toggle('light');
-  document.querySelector('.main-inputs-outputs').classList.toggle('light-theme');
-  document.querySelector('.to-do__input').classList.toggle('light-theme');
-  document.querySelectorAll('.output-list-item').forEach(item=>{
-    item.classList.toggle('light-theme');
-  })
-  document.querySelector('.footer-grid').classList.toggle('light-theme')
-  document.querySelector('.svg-sun').classList.toggle('disabled-sun');
-  document.querySelector('.svg-moon').classList.toggle('active-moon')
-  todoCategories.classList.toggle('light-border')
-})
+document.querySelector(".todo-btn-theme").addEventListener("click", (e) => {
+  document.body.classList.toggle("light");
+  document
+    .querySelector(".main-inputs-outputs")
+    .classList.toggle("light-theme");
+  document.querySelector(".to-do__input").classList.toggle("light-theme");
+  document.querySelectorAll(".output-list-item").forEach((item) => {
+    item.classList.toggle("light-theme");
+  });
+  document.querySelector(".footer-grid").classList.toggle("light-theme");
+  document.querySelector(".svg-sun").classList.toggle("disabled-sun");
+  document.querySelector(".svg-moon").classList.toggle("active-moon");
+  todoCategories.classList.toggle("light-border");
+});
 
 // DRAG AND DROP
 
-const draggable = document.querySelectorAll('.output-list-item');
-const drags = [...draggable]
-draggable.forEach(draggable =>{
-  draggable.addEventListener('dragstart', ()=>{
-    draggable.classList.add('dragging');
-  })
-  draggable.addEventListener('dragend',()=>{
-    draggable.classList.remove('dragging');
-  })
-})
+// draggable.forEach(draggableItem  =>{
+//   draggableItem.addEventListener('dragstart', ()=>{
+//     draggableItem.classList.add('dragging');
+//   })
+//   draggableItem .addEventListener('dragend',()=>{
+//     draggableItem .classList.remove('dragging');
+//   })
 
-outputUl.addEventListener('dragover',(e)=>{
+// })
+
+outputUl.addEventListener("drag", () => {
+  Array.from(outputUl.children).forEach((draggableItem) => {
+    draggableItem.addEventListener("dragstart", () => {
+      draggableItem.classList.add("dragging");
+    });
+    draggableItem.addEventListener("dragend", () => {
+      draggableItem.classList.remove("dragging");
+    });
+  });
+});
+
+outputUl.addEventListener("dragover", (e) => {
   e.preventDefault();
-  const afterElement = getDragAfterElement(outputUl, e.clientY)
-  const draggable = document.querySelector('.dragging');
-  if(afterElement == null){
-    outputUl.appendChild(draggable)
-  }else{
-    outputUl.insertBefore(draggable , afterElement)
+  const afterElement = getDragAfterElement(outputUl, e.clientY);
+  const drags = document.querySelector(".dragging");
+  if (afterElement == null) {
+    outputUl.appendChild(drags);
+    console.clear()
+  } else {
+    outputUl.insertBefore(drags, afterElement);
+    console.clear()
   }
-})
+});
 
-function getDragAfterElement(container,y){
-  const draggableElements = [...container.querySelectorAll('.output-list-item:not(.dragging)')]
+function getDragAfterElement(container, y) {
+  const draggableElements = [
+    ...container.querySelectorAll(".output-list-item:not(.dragging)"),
+  ];
 
-  return draggableElements.reduce((closest,child)=>{
-    const box = child.getBoundingClientRect();
-    const offset = y-box.top - box.height /2 
-    if(offset < 0 && offset > closest.offset){
-      return {offset: offset, element:child}
-    }else{
-      return closest;
-    }
-  },{offset:Number.NEGATIVE_INFINITY}).element
+  return draggableElements.reduce(
+    (closest, child) => {
+      const box = child.getBoundingClientRect();
+      const offset = y - box.top - box.height / 2;
+      if (offset < 0 && offset > closest.offset) {
+        return { offset: offset, element: child };
+      } else {
+        return closest;
+      }
+    },
+    { offset: Number.NEGATIVE_INFINITY }
+  ).element;
 }
+
+
