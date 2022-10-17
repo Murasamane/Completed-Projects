@@ -10,7 +10,7 @@ document.querySelector(".item-count").textContent =
 
 const template = (todo) => {
   const html = `
-  <li class="output-list-item" draggable="true">
+  <li class="output-list-item ${outputUl.classList.contains('light-theme')?'light-theme':''}" draggable="true">
   <label class="container">
     <input type="checkbox" class="checkbox"name="checkedInput">
     <span class="checkmark"></span>
@@ -132,6 +132,8 @@ document.querySelector(".todo-btn-theme").addEventListener("click", (e) => {
   document.querySelectorAll(".output-list-item").forEach((item) => {
     item.classList.toggle("light-theme");
   });
+  outputUl.classList.toggle('light-theme');
+
   document.querySelector(".footer-grid").classList.toggle("light-theme");
   document.querySelector(".svg-sun").classList.toggle("disabled-sun");
   document.querySelector(".svg-moon").classList.toggle("active-moon");

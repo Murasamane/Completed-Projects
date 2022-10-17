@@ -213,10 +213,7 @@
   color: #5e6079;
   font-size: 1.3rem;
 }
-/* .complete-todo{
-  justify-self: right;
-  padding: 1.6rem 2.4rem;
-} */
+
 .todo-btn {
   color: hsl(234, 11%, 52%);
   cursor: pointer;
